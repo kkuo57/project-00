@@ -2,8 +2,8 @@
 $(window).on("keypress", function handleKeypress(){
   for (i = 0; i < raceArray.length; i++){}
 });*/
-var playerone_count = 20;
-var playertwo_count = 20
+var playerone_count = 0;
+var playertwo_count = 0;
 
 $(window).on("keyup", function handleKeyup(event){
   console.log(event.which)
@@ -15,5 +15,9 @@ $(window).on("keyup", function handleKeyup(event){
     $(".playertwo").attr("style", "margin-left:" + playertwo_count + "px;");
     playertwo_count = playertwo_count + 20;  
   }
-
+  if (playerone_count === 1380){
+  alert ("Player One Wins!")
+  } else if (playertwo_count === 1380){
+  alert ("Player Two Wins!")
+  }
 });

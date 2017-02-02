@@ -9,3 +9,8 @@ img {
 a {
   text-decoration: none;
 }
+
+.racetrackone, .racetracktwo {
+  border: 1px solid white;
+  background: black;
+}
