@@ -11,7 +11,7 @@ $(window).on("keyup", function handleKeyup(event){
     $(".playerone").attr("style", "margin-left:" + playerone_count + "px;");
     playerone_count = playerone_count + 20;
   }
-  if (event.which === 186 || event.which === 222 ){
+  if (event.which === 75 || event.which === 76 ){
     $(".playertwo").attr("style", "margin-left:" + playertwo_count + "px;");
     playertwo_count = playertwo_count + 20;  
   }
